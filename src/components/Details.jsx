@@ -4,62 +4,72 @@ import { Link } from 'react-router-dom';
 
 const Details = ({ about, image, title, githubLink, liveDemo }) => {
   return (
-    <div className='my-4'>
-      <Card className='container py-3 border-0 shadow-sm'>
+    <div className="my-4">
+      <Card className="container py-4 border-0 shadow-sm">
         <Row className="g-4 align-items-center">
           <Col xs={12} md={4} className="text-center">
             <Card.Img 
-              variant='top' 
-              className='rounded box_shadow_hover shadow object-fit-cover'
+              variant="top" 
+              className="rounded shadow object-fit-cover"
               src={image} 
-              alt='my_image' 
+              alt="Project thumbnail" 
               style={{ maxWidth: '16.5rem', maxHeight: '16.5rem' }} 
             />
           </Col>
           <Col xs={12} md={8}>
-            <Card.Body>
-              {title && <Card.Title className='text-center fs-4 mb-3'>{title}</Card.Title>}
-              <Card.Text className='fs-5 text-muted'>{about}</Card.Text>
-              <div className='d-flex justify-content-center mt-3'>
-                {title ? (
+            <Card.Body className="text-md-start text-center">
+              {title && (
+                <Card.Title className="fs-3 mb-3 fw-semibold text-primary">
+                  {title}
+                </Card.Title>
+              )}
+              <Card.Text className="fs-5 text-muted mb-4">
+                {about}
+              </Card.Text>
+              <div className="d-flex justify-content-md-start justify-content-center gap-3 mt-3">
+                {githubLink && (
+                  <Button variant="primary" className="d-flex align-items-center gap-2">
+                    <FaGithubSquare />
+                    <Link
+                      to={githubLink}
+                      target="_blank"
+                      className="text-white text-decoration-none"
+                    >
+                      View Code
+                    </Link>
+                  </Button>
+                )}
+                {liveDemo && (
+                  <Button variant="success" className="d-flex align-items-center gap-2">
+                    <Link
+                      to={liveDemo}
+                      target="_blank"
+                      className="text-white text-decoration-none"
+                    >
+                      Live Demo
+                    </Link>
+                  </Button>
+                )}
+                {!githubLink && !liveDemo && (
                   <>
-                    <Button variant='primary' className='me-2'>
-                      <Link 
-                        target='_blank' 
-                        className='text-decoration-none text-white' 
-                        to={githubLink}
+                    <Button variant="primary" className="d-flex align-items-center gap-2">
+                      <FaGithubSquare />
+                      <Link
+                        to="https://github.com/bukaetie"
+                        target="_blank"
+                        className="text-white text-decoration-none"
                       >
-                        View Code <FaGithubSquare />
+                        GitHub
                       </Link>
                     </Button>
-                    <Button variant='success'>
-                      <Link 
-                        target='_blank' 
-                        className='text-decoration-none text-white' 
-                        to={liveDemo}
+                    <Button variant="primary" className="d-flex align-items-center gap-2">
+                      <FaLinkedin />
+                      <Link
+                        to="https://www.linkedin.com/"
+                        target="_blank"
+                        className="text-white text-decoration-none"
                       >
-                        Live Demo
-                      </Link>
-                    </Button>
-                  </>
-                ) : (
-                  <>
-                    <Button variant='primary' className='me-2'>
-                      <Link 
-                        target='_blank' 
-                        className='text-decoration-none text-white' 
-                        to={'https://github.com/bukaetie'}
-                      >
-                        GitHub <FaGithubSquare />
-                      </Link>
-                    </Button>
-                    <Button variant='primary'>
-                      <Link 
-                        target='_blank' 
-                        className='text-decoration-none text-white' 
-                        to={'https://www.linkedin.com/'}
-                      >
-                        LinkedIn <FaLinkedin />
+                        LinkedIn
                       </Link>
                     </Button>
                   </>

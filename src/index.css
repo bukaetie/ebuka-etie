@@ -12,19 +12,6 @@ border-bottom:2px solid DodgerBlue;
 transition: .5s ease-in;
 }
 
-.box-shadow{
-  box-shadow: 0 1px 4px hsla(0, 0%, 0%, 0.09),
-0 3px 8px hsla(0, 0%, 0%, 0.09),
-0 4px 13px hsla(0, 0%, 0%, 0.13);
-}
-
-.box_shadow_hover:hover{
-  box-shadow: 0 1px 4px hsla(0, 0%, 0%, 0.09),
-0 3px 8px hsla(0, 0%, 0%, 0.09),
-0 4px 13px hsla(0, 0%, 0%, 0.13);
-transition: .2s ease-in;
-}
-
 .text_justify{
   text-align: justify;
 }
@@ -33,11 +20,11 @@ transition: .2s ease-in;
   filter: drop-shadow(5px 1px 5px#111111);
 }
 
-.card:hover {
+.project-hover:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
 }
 
-.card {
+.project-hover {
   transition: transform 0.2s ease-in-out;
 }

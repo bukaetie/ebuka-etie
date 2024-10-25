@@ -15,12 +15,12 @@ const Header = () => {
   const handleNavLinkClick = () => setExpanded(false);
 
   return (
-    <Navbar expand="lg" expanded={expanded} className="bg-body-tertiary shadow-sm">
+    <Navbar expand="lg" expanded={expanded} className="bg-body-tertiary shadow-sm sticky-top">
       <Container>
         <Navbar.Brand>
           <NavLink 
             to='/' 
-            className='fs-4 fw-light text-decoration-none text-black border border-1 ps-2 pe-2 border-primary box_shadow_hover rounded'
+            className='fs-3 text-decoration-none text-body border border-1 px-2 border-primary rounded'
             onClick={handleNavLinkClick}
           >
             Ebuka Etie
@@ -28,12 +28,12 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleNavbar} aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto align-items-center">
+          <Nav className="ms-auto d-block d-md-flex align-items-center">
             <Nav.Item className='me-4'>
               <NavLink 
                 to='/' 
                 className={({ isActive }) => 
-                  `text-decoration-none fw-normal hover-act ${isActive ? 'text-primary' : 'text-black'}`
+                  `text-decoration-none fs-5 fw-normal hover-act ${isActive ? 'text-primary' : 'text-body'}`
                 }
                 onClick={handleNavLinkClick}
               >
@@ -44,7 +44,7 @@ const Header = () => {
               <NavLink 
                 to='/about' 
                 className={({ isActive }) => 
-                  `text-decoration-none fw-normal hover-act ${isActive ? 'text-primary' : 'text-black'}`
+                  `text-decoration-none fs-5 fw-normal hover-act ${isActive ? 'text-primary' : 'text-body'}`
                 }
                 onClick={handleNavLinkClick}
               >
@@ -55,7 +55,7 @@ const Header = () => {
               <NavLink 
                 to='/projects' 
                 className={({ isActive }) => 
-                  `text-decoration-none fw-normal hover-act ${isActive ? 'text-primary' : 'text-black'}`
+                  `text-decoration-none fs-5 fw-normal hover-act ${isActive ? 'text-primary' : 'text-body'}`
                 }
                 onClick={handleNavLinkClick}
               >

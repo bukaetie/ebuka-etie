@@ -7,57 +7,64 @@ import Skills from '../components/Skills';
 
 const Home = () => {
   return (
-    <Container className='mt-3'>
+    <Container className='mt-4'>
       <Row className="justify-content-center">
         <Col xs={12} md={10}>
-          <Card className='box-shadow fs-6 p-4'>
-            <Row className="g-4 align-items-center">
-              <Col xs={12} md={6} className="text-md-start">
+          <Card className='p-3 border-0 shadow'>
+            <Row className="align-items-center g-5">
+              {/* Intro Text Section */}
+              <Col xs={12} md={6} className="text-md-start text-center">
                 <Card.Body>
-                  <Card.Text className="fs-4">Hi</Card.Text>
-                  <Card.Text className="fs-5">
-                    I am <span className='fw-semibold'>Ebuka Etie</span>
+                  <Card.Text className="fs-3 mb-1 text-muted">Hello, I'm</Card.Text>
+                  <Card.Text className="fs-2 text-dark">
+                    Ebuka Etie
                   </Card.Text>
-                  <Card.Text className='fw-light text-secondary'>
+                  <Card.Text className='fs-5 text-secondary mb-4'>
                     Aspiring Software Developer
                   </Card.Text>
-                  <Button variant='primary' href="mailto:your-mail@gmail.com" className="mb-3 fs-6">
-                    Contact Me <IoMdMail size={20} />
+                  <Button variant='primary' href="mailto:your-mail@gmail.com" className="px-4 py-2 fs-6">
+                    Contact Me <IoMdMail size={18} className="ms-2" />
                   </Button>
 
-                  <ListGroup className='border-0 mt-3'>
-                    <div className='d-flex justify-content-around'>
-                      <Link target='_blank' to='https://www.facebook.com/' className='text-primary hover-act'>
-                        <FaFacebookSquare size={28}/>
-                      </Link>
-                      <Link target='_blank' to='https://www.instagram.com/' className='text-primary hover-act'>
-                        <FaSquareInstagram size={28} />
-                      </Link>
-                      <Link target='_blank' to='https://www.linkedin.com/' className='text-primary hover-act'>
-                        <FaLinkedin size={28} />
-                      </Link>
-                      <Link target='_blank' to='https://github.com/' className='text-primary hover-act'>
-                        <FaGithubSquare size={28}/>
-                      </Link>
-                    </div>
+                  {/* Social Links */}
+                  <ListGroup className='border-0 mt-4 d-flex flex-row justify-content-center justify-content-md-start gap-3'>
+                    <Link target='_blank' to='https://www.facebook.com/' className='text-dark'>
+                      <FaFacebookSquare size={24}/>
+                    </Link>
+                    <Link target='_blank' to='https://www.instagram.com/' className='text-dark'>
+                      <FaSquareInstagram size={24} />
+                    </Link>
+                    <Link target='_blank' to='https://www.linkedin.com/' className='text-dark'>
+                      <FaLinkedin size={24} />
+                    </Link>
+                    <Link target='_blank' to='https://github.com/' className='text-dark'>
+                      <FaGithubSquare size={24}/>
+                    </Link>
                   </ListGroup>
                 </Card.Body>
               </Col>
-              <Col xs={12} md={6} className="text-md-end text-center">
+
+              {/* Image Section */}
+              <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
                 <Card.Img
-                  className='w-100 rounded box_shadow_hover shadow-lg object-fit-cover'
+                  className='w-100 rounded-circle shadow-sm object-fit-cover border border-5 border-primary'
                   src='/pic.jpg'
-                  alt='my_image'
-                  style={{ maxWidth: '16.5rem', maxHeight: '16.5rem' }}
+                  alt='Ebuka Etie'
+                  style={{ maxWidth: '14rem', maxHeight: '14rem' }}
                 />
               </Col>
             </Row>
           </Card>
         </Col>
       </Row>
-      <Skills />
+      {/* Skills Section */}
+      <Row className="mt-4">
+        <Col>
+          <Skills />
+        </Col>
+      </Row>
     </Container>
   );
-}
+};
 
 export default Home;
