@@ -1,23 +1,15 @@
-*{
+* {
   font-family: poppins, sans-serif;
 }
 
-.hover-act{
+.hover-act {
   border: 2px solid transparent;
 }
 
-.hover-act:hover{
+.hover-act:hover {
 color: DodgerBlue;
 border-bottom:2px solid DodgerBlue;
 transition: .5s ease-in;
-}
-
-.text_justify{
-  text-align: justify;
-}
-
-.custom_shadow{
-  filter: drop-shadow(5px 1px 5px#111111);
 }
 
 .card-hover:hover {

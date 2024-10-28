@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an Axios instance with your API base URL
 const api = axios.create({
-  baseURL: 'http://localhost:5173/api',
+  baseURL: 'http://localhost:5000/api',
 });
 
 // Request interceptor to add headers or log requests

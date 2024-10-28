@@ -5,6 +5,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import Skills from '../components/Skills';
 import Projects from './Projects/Projects';
+import ScrollToTop from 'react-scroll-to-top';
 import api from '../api/Api';
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
     try {
       const response = await api.post('/contact', formData);
       // Handle the response
-      setFeedback('Message sent successfully!'); // Set success message
+      setFeedback(response.data.message || 'Message sent successfully!'); // Set success message
       setFormData({
         name: '',
         email: '',
@@ -43,7 +44,10 @@ const Home = () => {
       });
     } catch (error) {
       console.error('Error sending contact form:', error);
-      setFeedback('Failed to send message. Please try again later.'); // Set error message
+
+      // Accessing error message more robustly
+      const errorMessage = error.response?.data?.error || error.response?.data?.message || 'Failed to send message. Please try again later.';
+      setFeedback(errorMessage);
     } finally {
       setLoading(false); // Reset loading state
     }
@@ -73,7 +77,7 @@ const Home = () => {
                   <Card.Text className='fs-5 text-secondary mb-4'>
                     Aspiring Software Developer
                   </Card.Text>
-                  <Button variant='primary' href="mailto:your-mail@gmail.com">
+                  <Button variant='primary' href="mailto:etieebuka@gmail.com">
                     Contact Me <IoMdMail size={18} className="ms-2" />
                   </Button>
 
@@ -251,6 +255,9 @@ const Home = () => {
           </Row>
         </Col>
       </Row>
+
+      {/* Scroll to top button */}
+      <ScrollToTop smooth color="#007bff" />
     </Container>
   );
 };

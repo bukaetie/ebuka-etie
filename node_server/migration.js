@@ -29,7 +29,7 @@ connection.connect((err) => {
 
   // SQL query to create the contact table if it doesn't exist
   const createContactTableQuery = `
-    CREATE TABLE IF NOT EXISTS contact (
+    CREATE TABLE IF NOT EXISTS contacts (
       id INT AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(100) NOT NULL,
       email VARCHAR(100) NOT NULL,

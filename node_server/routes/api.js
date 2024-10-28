@@ -1,16 +1,10 @@
 // All API routes
 const express = require('express');
-const { 
-  register, 
-  login, 
-  logout 
-} = require('../controllers/authController');
+const { submitContactForm } = require('../controllers/contactController');
 
 const router = express.Router();
 
-// Authentication routes
-router.post('/register', register);
-router.post('/login', login);
-router.post('/logout', authenticateToken, logout);
+// Contact form submission endpoint
+router.post('/contact', submitContactForm);
 
 module.exports = router;

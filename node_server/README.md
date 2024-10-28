@@ -65,7 +65,7 @@ You can test the API endpoints using tools like [Postman](https://www.postman.co
 
 ## Structure
 
-   ebuka-etie-server/
+   node_server/
    ├── config/
    │   └── db.js
    ├── controllers/
