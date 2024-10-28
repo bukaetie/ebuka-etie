@@ -73,7 +73,7 @@ const Home = () => {
               <Col xs={12} md={6} className="text-md-start text-center">
                 <Card.Body>
                   <Card.Text className="fs-3 mb-1 text-muted">Hello, I'm</Card.Text>
-                  <Card.Text className="fs-2 text-dark">Ebuka Etie</Card.Text>
+                  <Card.Text className="fs-2 ">Ebuka Etie</Card.Text>
                   <Card.Text className='fs-5 text-secondary mb-4'>
                     Aspiring Software Developer
                   </Card.Text>
@@ -83,16 +83,16 @@ const Home = () => {
 
                   {/* Social Links */}
                   <ListGroup className='border-0 mt-4 d-flex flex-row justify-content-center justify-content-md-start gap-3'>
-                    <a target='_blank' rel="noopener noreferrer" href='https://www.facebook.com/' className='text-dark'>
+                    <a target='_blank' rel="noopener noreferrer" href='https://www.facebook.com/'>
                       <FaFacebookSquare size={24}/>
                     </a>
-                    <a target='_blank' rel="noopener noreferrer" href='https://www.instagram.com/' className='text-dark'>
+                    <a target='_blank' rel="noopener noreferrer" href='https://www.instagram.com/'>
                       <FaSquareInstagram size={24} />
                     </a>
-                    <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/' className='text-dark'>
+                    <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/'>
                       <FaLinkedin size={24} />
                     </a>
-                    <a target='_blank' rel="noopener noreferrer" href='https://github.com/' className='text-dark'>
+                    <a target='_blank' rel="noopener noreferrer" href='https://github.com/'>
                       <FaGithubSquare size={24}/>
                     </a>
                   </ListGroup>

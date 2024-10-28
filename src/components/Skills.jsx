@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <div className="container mt-4">
       <h3 className="text-center text-primary">My Technical Skills</h3>
-      <div className="d-block d-md-flex flex-wrap justify-content-center mt-3 gap-4 text-dark">
+      <div className="d-block d-md-flex flex-wrap justify-content-center mt-3 gap-4 text-body">
         <div className="text-center">
           <SiCsharp size={30} />
           <p className="mt-2 fs-6">C# Programmen</p>
