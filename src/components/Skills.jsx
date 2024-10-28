@@ -4,7 +4,7 @@ import { SiCsharp, SiPhp, SiMysql, SiPython } from "react-icons/si";
 const Skills = () => {
   return (
     <div className="container mt-4">
-      <h4 className="text-center">My Technical Skills</h4>
+      <h3 className="text-center text-primary">My Technical Skills</h3>
       <div className="d-block d-md-flex flex-wrap justify-content-center mt-3 gap-4 text-dark">
         <div className="text-center">
           <SiCsharp size={30} />

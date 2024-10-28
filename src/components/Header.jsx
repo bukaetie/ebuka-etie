@@ -29,7 +29,7 @@ const Header = () => {
         <Navbar.Toggle onClick={toggleNavbar} aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto d-block d-md-flex align-items-center">
-            <Nav.Item className='me-4'>
+            <Nav.Item className='me-4 py-1'>
               <NavLink 
                 to='/' 
                 className={({ isActive }) => 
@@ -40,7 +40,7 @@ const Header = () => {
                 Home
               </NavLink>
             </Nav.Item>
-            <Nav.Item className='me-4'>
+            <Nav.Item className='me-4 py-1'>
               <NavLink 
                 to='/about' 
                 className={({ isActive }) => 
@@ -51,7 +51,7 @@ const Header = () => {
                 About
               </NavLink>
             </Nav.Item>
-            <Nav.Item className='me-4'>
+            <Nav.Item className='me-4 py-1'>
               <NavLink 
                 to='/projects' 
                 className={({ isActive }) => 
@@ -62,7 +62,7 @@ const Header = () => {
                 Projects
               </NavLink>
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item className='py-1'>
               <NavLink 
                 download="Ebuka_Etie_Resume" 
                 target="_blank" 
