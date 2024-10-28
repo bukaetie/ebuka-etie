@@ -4,10 +4,10 @@ import ProjectInfo from '../../source/ProjectInfo';
 
 const Projects = () => { 
   return (
-    <div className='container d-flex flex-row flex-wrap gap-3 justify-content-center align-items-center my-4'>
+    <div className='d-flex flex-row flex-wrap gap-3 justify-content-center align-items-center my-4'>
       {ProjectInfo.map((item, id) => {
         return (
-          <Card key={id} className='shadow-sm project-hover' style={{ width: '18rem' }}>
+          <Card key={id} className='shadow-sm card-hover' style={{ width: '18rem' }}>
             <Card.Header className='text-center'>
               {item.title}
             </Card.Header>

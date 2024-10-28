@@ -20,11 +20,11 @@ transition: .5s ease-in;
   filter: drop-shadow(5px 1px 5px#111111);
 }
 
-.project-hover:hover {
+.card-hover:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
 }
 
-.project-hover {
+.card-hover {
   transition: transform 0.2s ease-in-out;
 }
