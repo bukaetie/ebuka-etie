@@ -75,7 +75,7 @@ const Home = () => {
                   <Card.Text className="fs-3 mb-1 text-muted">Hello, I'm</Card.Text>
                   <Card.Text className="fs-2 ">Ebuka Etie</Card.Text>
                   <Card.Text className='fs-5 text-secondary mb-4'>
-                    Aspiring Software Developer
+                    Software Developer
                   </Card.Text>
                   <Button variant='primary' href="mailto:etieebuka@gmail.com">
                     Contact Me <IoMdMail size={18} className="ms-2" />

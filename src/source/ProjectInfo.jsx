@@ -22,14 +22,6 @@ const ProjectInfo = [
         githubLink: 'https://github.com/bukaetie/To-Do-List',
         liveDemo: 'https://glittery-quokka-139638.netlify.app/',
         about: 'This is Todo project, where user can add, edit(update) and delete tasks. This project is created using HTML, CSS, JS and Bootstrap, LocalStorage is Used to holds the data in it. '
-    },
-    {
-        id: 4,
-        title: 'Daraz-Clone',
-        image: '/Daraz-Clone.PNG',
-        githubLink: 'https://github.com/bukaetie/Ecommerce-React',
-        liveDemo: 'https://ecommerce-react-ten-swart.vercel.app/',
-        about: 'This is E-commerce project( Daraz Clone Application). This Project is created for learning purpose only, where user can login, register, save to cart, view product detials. This project is created using vite with Bootstrap, LocalStorage is use to holds the add to cart products & Dummy JSON was used for Api.'
     }
 ]
 
