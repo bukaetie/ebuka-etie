@@ -26,7 +26,7 @@ A personal portfolio website to showcase my skills, projects, and professional j
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/proto-codes/ebuka-etie.git
+   git clone https://github.com/bukaetie/ebuka-etie.git
    cd ebuka-etie-portfolio
    ```
 
